@@ -13,7 +13,7 @@ img{
 }
 section{
     padding: 10px;
-    border-top: 4px solid #BFACE0;
+    border-top: 2px solid #BFACE0;
 }
 /* Add a black background color to the top navigation */
 .topnav {
@@ -123,7 +123,7 @@ section{
     width:50px;
     height: 50px;
     border-radius: 50px;
-    background-color: #7f79b7;
+    background-color: white;
 }
 
 .arrowDown i{
@@ -180,7 +180,7 @@ footer{
   padding: 0px 20px;
   height: 35vh;
   background: linear-gradient(to bottom right, white, #BFACE0);
-  border-top: 4px solid #BFACE0;
+  border-top: 2px solid #BFACE0;
 }
 h2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -203,11 +203,102 @@ h2{
   float: right;
 }
 
+/* styling the hosted page */
 
+#InputPage{
+  overflow: hidden;
+  color: aliceblue;
+}
+#inputs{
+  height: 100vh;
+  background:linear-gradient(to bottom right, #645CAA, #BFACE0);;
+}
+.step{
+  font-size: large;
+}
+.dropBox{
+  margin: 2% 5%;
+  width: 90%;
+  background-color: whitesmoke;
+  border: 2px solid #400D51;
+  border-radius: 10px;
+}
+.innerDrop{
+  margin: 2% 2%;
+  width: 96%;
+  background-color: whitesmoke;
+  border: 2px dotted #400D51;
+  border-radius: 10px;
+  text-align: center;
+  vertical-align: center;
+  color: black;
+}
+.choose, .plus{
+  display: inline-block;
+  border: 3px solid black;
+  height: 50px;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 8px;
+  margin: 25px 0px;
+  vertical-align: top;
+}
+.plus{
+  border-right: 0px;
+  border-color: black;
+  border-style: solid;
+}
+.caption{
+  margin: 1% 5%;
+  width: 90%;
+  height: 40px;
+  font-size: 120%;
+  color: black;
+  border-radius: 3px;
+  box-shadow: none;
+  border: none;
+}
+.caption:focus{
+  outline: none;
+}
 
+/* Styling the glass button */
+.submitDiv{
+  text-align: center;
+  margin-top: 5%;
+}
+.glass{
+	/* background styles */
+	position: relative;
+	display: inline-block;
+	padding: 10px 25px;
+	background-color: purple; /*for compatibility with older browsers*/
+	background: linear-gradient(#5a51ae,#8146e8);
 
-
-
+	/* text styles */
+	text-decoration: none;
+	color: #fff;
+	font-size: 25px;
+	font-family: sans-serif;
+	font-weight: 100;
+  border-radius: 3px;
+  box-shadow: 0px 1px 4px -2px #333;
+  text-shadow: 0px -1px #333;
+}
+.glass:after{
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: calc(100% - 4px);
+	height: 50%;
+	background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+}
+.glass:hover{
+	background: linear-gradient(purple,#645CAA);
+  text-decoration: none;
+  color: white;
+}
 
 
 

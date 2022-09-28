@@ -4,8 +4,9 @@
 <link rel="icon" type="image/x-icon" href="./images/favicon.png">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
-<body>
+<body id = "InputPage">
 <nav>
     <div class="topnav" id="myTopnav">
         <a href="index.html" class="logo"> <img src="./images/Logo.png" height="120px"></a>
@@ -17,6 +18,20 @@
         </a>
     </div>
 </nav>
+<section id="inputs">
+    <div class="step1">
+        <div class="step">1. Select the image(.png, .jpg) by uploading/dragging the file</div>    
+        <div class="dropBox"><div class="innerDrop"><span class="plus"><i class="material-icons" style="font-size:30px;">&#xe145;</i></span><span class="choose">Choose files</span></div></div>
+    </div>
+    <div class="step2">
+        <div class="step">2. Enter the caption for the uploaded image</div>    
+        <input type="text" placeholder="Caption" class="caption">
+    </div>
+    <div class="submitDiv">
+        <a href="" class="glass">Submit</a>
+    </div>
+</section>
+
 <script src="./js/script.js"></script>
 </body>
 </html>
