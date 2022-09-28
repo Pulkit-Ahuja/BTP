@@ -1,6 +1,6 @@
 body{
     overscroll-behavior: none;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 div.row{
   padding-bottom: 0px;
