@@ -69,7 +69,7 @@ section{
     font-family: 'Monotype Corsiva', Times, serif;
 }
 #welcomeSpan{
-  animation: fade-in 1s 1 ease-out forwards;
+  animation: fade-in 0.5s 1 ease-out forwards;
 }
 #welcome span{
     display: block;
@@ -78,7 +78,7 @@ section{
     font-variant: normal;
     font-size: 80%;
     font-family:Arial, Helvetica, sans-serif;
-    animation: fade-in 1s 1 ease-out forwards;
+    animation: fade-in 0.5s 1 ease-out forwards;
 }
 #welcome #name{
     font-size: 220%;
@@ -93,8 +93,8 @@ section{
 .from-left{
     text-align: left;
     margin-left: -100vw;
-    animation: moveleft 2s 1 ease-out forwards;
-    animation-delay: 1s;
+    animation: moveleft 1s 1 ease-out forwards;
+    animation-delay: 500ms;
 }
 
 
@@ -102,8 +102,8 @@ section{
 .from-right{
     text-align: right;
     margin-right: -100vw;
-    animation: moveright 2s 1 ease-out forwards;
-    animation-delay: 3s;
+    animation: moveright 1s 1 ease-out forwards;
+    animation-delay: 1500ms;
 }
 
 /* down indicator */
@@ -111,8 +111,8 @@ section{
     text-align: center;
     opacity: 0;
     margin-top: -50px;
-    animation: movedown 5s 1 linear forwards;
-    animation-delay: 4s;
+    animation: movedown 1s 1 linear forwards;
+    animation-delay: 2500ms;
 }
 .arrowDown{
     display: inline-block;
