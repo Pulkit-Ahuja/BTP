@@ -1,6 +1,8 @@
 body{
     overscroll-behavior: none;
     overflow-x: hidden;
+    background: #645CAA;
+    color: #400D51;
 }
 div.row{
   padding-bottom: 0px;
@@ -11,10 +13,12 @@ img{
 }
 section{
     padding: 10px;
+    border-top: 4px solid #BFACE0;
 }
 /* Add a black background color to the top navigation */
 .topnav {
-    background: linear-gradient(45deg, #395B64,#E7F6F2)  ;
+    background: black ;
+    opacity: 0.3;
     overflow: hidden;
     text-align: right;
     height: 8vh;
@@ -23,7 +27,7 @@ section{
 /* Style the links inside the navigation bar */
   .topnav a {
     display: block;
-    color: #2C3333;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -53,8 +57,8 @@ section{
   }
 
 #landing, #getApp{
-    background:linear-gradient(to bottom right, #2C3333, #395B64);
-    color: #E7F6F2;
+    background:linear-gradient(to bottom right, #645CAA, #BFACE0);
+    color: white;
     margin: 0;
 }
 #landing{
@@ -119,17 +123,17 @@ section{
     width:50px;
     height: 50px;
     border-radius: 50px;
-    background-color: #E7F6F2;
+    background-color: #7f79b7;
 }
 
-.arrowDown img{
+.arrowDown i{
     animation: down-animation 1s infinite;
 }
 
 /* Section 2 starts here */
 #instructions-section{
-    color: #395B64;
-    background: linear-gradient(to bottom right, white, #A5C9CA);
+    color: #400D51;;
+    background: linear-gradient(to bottom right, white, #BFACE0);
 }
 h1{
     font-variant: small-caps;
@@ -175,7 +179,8 @@ footer{
   width: 100%;
   padding: 0px 20px;
   height: 35vh;
-  background:linear-gradient(to bottom right, white, #A5C9CA);
+  background: linear-gradient(to bottom right, white, #BFACE0);
+  border-top: 4px solid #BFACE0;
 }
 h2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
