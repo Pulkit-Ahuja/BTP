@@ -1,5 +1,6 @@
 body{
     overscroll-behavior: none;
+    overflow: hidden;
 }
 div.row{
   padding-bottom: 0px;
@@ -67,6 +68,9 @@ section{
     font-variant: small-caps;
     font-family: 'Monotype Corsiva', Times, serif;
 }
+#welcomeSpan{
+  animation: fade-in 1s 1 ease-out forwards;
+}
 #welcome span{
     display: block;
 }
@@ -74,6 +78,7 @@ section{
     font-variant: normal;
     font-size: 80%;
     font-family:Arial, Helvetica, sans-serif;
+    animation: fade-in 1s 1 ease-out forwards;
 }
 #welcome #name{
     font-size: 220%;
@@ -87,15 +92,27 @@ section{
 }
 .from-left{
     text-align: left;
+    margin-left: -100vw;
+    animation: moveleft 2s 1 ease-out forwards;
+    animation-delay: 1s;
 }
+
+
 /* setting the right pane */
 .from-right{
     text-align: right;
+    margin-right: -100vw;
+    animation: moveright 2s 1 ease-out forwards;
+    animation-delay: 3s;
 }
 
 /* down indicator */
 .arrow-hold{
     text-align: center;
+    opacity: 0;
+    margin-top: -50px;
+    animation: movedown 5s 1 linear forwards;
+    animation-delay: 4s;
 }
 .arrowDown{
     display: inline-block;
@@ -227,3 +244,41 @@ h2{
         height: 50px;
     }
 }
+
+@keyframes moveleft {
+  0%{
+    margin-left: -100vw;
+  }
+  100%{
+    margin-left: 0vw;
+  }
+ }
+
+ @keyframes moveright {
+  0%{
+    margin-right: -100vw;
+  }
+  100%{
+    margin-right: 0vw;
+  }
+ }
+
+ @keyframes fade-in {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+ }
+
+ @keyframes movedown {
+  0%{
+    opacity: 0;
+    margin-top:0px;
+  }
+  100%{
+    opacity: 1;
+    margin-top: 50px;
+  }
+ }
